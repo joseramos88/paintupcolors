@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PaintUPColors</title>
+
+  <!-- ============================================================
+    SECURITY HEADERS (via <meta> tags)
+    Note: For maximum protection, also add these as HTTP headers
+    in your server config (Apache .htaccess, Nginx, Cloudflare, etc.)
+  ============================================================ -->
+
+  <!-- Content Security Policy: only allow resources from your own domain + trusted CDNs -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com;
+                 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+                 font-src 'self' https://fonts.gstatic.com;
+                 img-src 'self' data: https:;
+                 connect-src 'self' https://api.web3forms.com;
+                 frame-src https://www.google.com;
+                 object-src 'none';
+                 base-uri 'self';
+                 form-action 'self' https://api.web3forms.com;">
+
+  <!-- Prevents browsers from guessing (sniffing) content types -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff"/>
+
+  <!-- Prevents your site from being embedded in iframes (clickjacking protection) -->
+  <meta http-equiv="X-Frame-Options" content="DENY"/>
+
+  <!-- Controls how much referrer info is sent when navigating away -->
+  <meta name="referrer" content="strict-origin-when-cross-origin"/>
+
+  <!-- Disables browser features not needed by this site -->
+  <meta http-equiv="Permissions-Policy"
+        content="geolocation=(), microphone=(), camera=(), payment=()"/>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nlogo">
+    <img src="./img/LogoPaintColor.png" alt="PaintUPColors Logo" class="nlogo-img" />
+    <span class="nlogo-t">PaintUP<span class="nlogo-a">Colors</span></span>
+  </div>
+  <ul class="nlinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#quote">Contact</a></li>
+  </ul>
+  <a href="#quote" class="ncta">Request a Quote</a>
+  <div class="ham" onclick="document.getElementById('mn').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mnav" id="mn">
+  <a href="#services" onclick="document.getElementById('mn').classList.remove('open')">Services</a>
+  <a href="#projects" onclick="document.getElementById('mn').classList.remove('open')">Projects</a>
+  <a href="#reviews"  onclick="document.getElementById('mn').classList.remove('open')">Reviews</a>
+  <a href="#quote"    onclick="document.getElementById('mn').classList.remove('open')">Quote</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hi">
+    <div>
+      <span class="hbadge">Professional Service Guaranteed</span>
+      <h1 class="htitle">We Transform<span class="haccent">Your Home</span></h1>
+      <p class="hsub">Experts in residential maintenance and remodeling. Painting, electrical, plumbing and more — with quality and a guarantee on every project.</p>
+      <div class="hbtns">
+        <a href="#quote" class="btn1">Get a Free Quote</a>
+        <a href="#projects" class="btn2">View Projects</a>
+      </div>
+      <div class="hstats">
+        <div><div class="snum">300+</div><div class="slbl">Projects</div></div>
+        <div><div class="snum">15+</div><div class="slbl">Years of exp.</div></div>
+        <div><div class="snum">97%</div><div class="slbl">Satisfaction</div></div>
+        <div><div class="snum">24h</div><div class="slbl">Response</div></div>
+      </div>
+    </div>
+    <div class="hcards">
+      <div class="hcard"><div class="hcicon">&#127968;</div><h4>Remodeling</h4><p>With premium finishes.</p></div>
+      <div class="hcard"><div class="hcicon">&#127912;</div><h4>Painting</h4><p>Interior and exterior with trending colors.</p></div>
+      <div class="hcard"><div class="hcicon">&#9889;</div><h4>Electrical</h4><p>Certified and safe installations.</p></div>
+      <div class="hcard"><div class="hcicon">&#128295;</div><h4>Plumbing</h4><p>Repair and installation, leak-free.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="cnt">
+    <p class="slabel reveal">Our Services</p>
+    <h2 class="stitle reveal">Everything your home needs</h2>
+    <p class="ssub reveal">We offer comprehensive solutions with top-quality materials and certified technicians.</p>
+    <div class="sgrid">
+      <div class="scard reveal"><div class="sicon">&#127912;</div><h3>Residential Painting</h3><p>Interior and exterior painting with professional techniques. Decorative textures and custom colors.</p></div>
+      <div class="scard reveal"><div class="sicon">&#9889;</div><h3>Electrical</h3><p>Electrical installations, wiring, LED lighting and fault resolution with safety certification.</p></div>
+      <div class="scard reveal"><div class="sicon">&#127959;</div><h3>Remodeling</h3><p>Full renovation of kitchens, bathrooms and living rooms with American finishes and imported materials.</p></div>
+      <div class="scard reveal"><div class="sicon">&#128295;</div><h3>Plumbing</h3><p>Installation and repair of pipes, water heaters and bathrooms. Leak detection with modern technology.</p></div>
+      <div class="scard reveal"><div class="sicon">&#129695;</div><h3>Doors &amp; Windows</h3><p>Installation of double-panel windows and doors with high-quality thermal and acoustic sealing.</p></div>
+      <div class="scard reveal"><div class="sicon">&#127968;</div><h3>Roofing &amp; Coverings</h3><p>Roof repair and installation. Waterproofing and rainwater drainage for total protection.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAROUSEL -->
+<section id="projects">
+  <div class="cnt">
+    <p class="slabel reveal">Completed Projects</p>
+    <h2 class="stitle reveal">Our work speaks for itself</h2>
+    <p class="ssub reveal">Every project is unique. Here are some of our most recent completed works.</p>
+    <div class="cwrap reveal">
+      <button class="cbtn prev" id="btnP" aria-label="Previous">&#8592;</button>
+      <div class="couter">
+        <div class="ctrack" id="ctr">
+          <!-- Slide 1 -->
+          <div class="svis sv1">
+            <div class="sinner" id="si1">
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen1.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen5.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen9.jpeg')"></div>
+            </div>
+            <div class="sph"><div class="sphi">🎨</div><h3>Renovated Living Room</h3><p>Austin, TX</p></div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="svis sv2">
+            <div class="sinner" id="si2">
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen2.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen6.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen10.jpeg')"></div>
+            </div>
+            <div class="sph"><div class="sphi">🏗️</div><h3>American Kitchen</h3><p>Houston, TX</p></div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="svis sv3">
+            <div class="sinner" id="si3">
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen3.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen7.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen11.jpeg')"></div>
+            </div>
+            <div class="sph"><div class="sphi">⚡</div><h3>Electrical Panel</h3><p>Dallas, TX</p></div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="svis sv4">
+            <div class="sinner" id="si4">
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen4.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen8.jpeg')"></div>
+              <div class="sframe" style="background-image: url('./img/proyectOne/imagen12.jpeg')"></div>
+            </div>
+            <div class="sph"><div class="sphi">🔧</div><h3>Master Bathroom</h3><p>San Antonio, TX</p></div>
+          </div>
+        </div>
+      </div>
+      <button class="cbtn next" id="btnN" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="cdots" id="cdots"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="cnt">
+    <p class="slabel reveal">Customer Reviews</p>
+    <h2 class="stitle reveal">What our clients say</h2>
+    <p class="ssub reveal">Our clients' satisfaction is our best recommendation.</p>
+    <div class="rgrid" id="rGrid">
+      <div class="rcard reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rq">"</div>
+        <p class="rt">Excellent work on our kitchen remodel. The team was very professional, punctual and left everything clean. They exceeded our expectations.</p>
+        <div class="ra"><div class="rav">MR</div><div><div class="rn">Maria Rodriguez</div><div class="rl">Austin, TX</div></div></div>
+      </div>
+      <div class="rcard reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rq">"</div>
+        <p class="rt">I hired the interior painting service and was very satisfied. They finished ahead of schedule and the price was very fair. Highly recommend!</p>
+        <div class="ra"><div class="rav">JL</div><div><div class="rn">Jorge Lopez</div><div class="rl">Houston, TX</div></div></div>
+      </div>
+      <div class="rcard reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="rq">"</div>
+        <p class="rt">We had a complicated water leak and PaintUPColors fixed it the same day. Very skilled technicians, honest with the diagnosis and pricing.</p>
+        <div class="ra"><div class="rav">AC</div><div><div class="rn">Ana Castillo</div><div class="rl">Dallas, TX</div></div></div>
+      </div>
+    </div>
+    <div class="addrev reveal">
+      <h3>Did we work with you? Leave your review!</h3>
+      <!-- Review form: sanitized with JS before display (see script below) -->
+      <form id="revForm" novalidate>
+        <div class="rfrow">
+          <div class="fg">
+            <label for="rNm">Full name *</label>
+            <input type="text" id="rNm" placeholder="Your name" autocomplete="name" maxlength="80"/>
+            <span class="emsg" id="rNmE">Please enter your name.</span>
+          </div>
+          <div class="fg">
+            <label for="rCt">City</label>
+            <input type="text" id="rCt" placeholder="City, State" maxlength="60"/>
+          </div>
+        </div>
+        <div class="fg">
+          <label>Rating *</label>
+          <div class="srate">
+            <input type="radio" name="rat" id="s5" value="5"/><label for="s5">&#9733;</label>
+            <input type="radio" name="rat" id="s4" value="4"/><label for="s4">&#9733;</label>
+            <input type="radio" name="rat" id="s3" value="3"/><label for="s3">&#9733;</label>
+            <input type="radio" name="rat" id="s2" value="2"/><label for="s2">&#9733;</label>
+            <input type="radio" name="rat" id="s1" value="1"/><label for="s1">&#9733;</label>
+          </div>
+          <span class="emsg" id="rRtE">Please select a rating.</span>
+        </div>
+        <div class="fg">
+          <label for="rTx">Your review *</label>
+          <textarea id="rTx" rows="3" placeholder="Tell us about your experience..." maxlength="600"></textarea>
+          <span class="emsg" id="rTxE">Please write your review (minimum 20 characters).</span>
+        </div>
+        <button type="submit" class="btn1" style="border:none;cursor:pointer;padding:.8rem 2rem;font-family:inherit;font-size:.95rem;border-radius:50px;">Post Review</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+  <div class="cnt">
+    <p class="slabel reveal">Free Quote</p>
+    <h2 class="stitle reveal">Ready to transform your home?</h2>
+    <p class="ssub reveal">Fill out the form and we will contact you within 24 hours.</p>
+    <div class="qgrid">
+      <div class="qinfo reveal">
+        <h3>Why choose us?</h3>
+        <p>Over 12 years of experience, certified team and a written guarantee on every project.</p>
+        <h3>Direct Contact</h3>
+        <div class="ci"><span class="ico">&#128222;</span><span>(302) 569-0223</span></div>
+        <!-- Email obfuscated to prevent scraping by bots -->
+        <div class="ci"><span class="ico">&#9993;</span><span id="contactEmail"></span></div>
+        <div class="ci"><span class="ico">&#9201;</span><span>Mon-Sat: 7:00 AM - 7:00 PM</span></div>
+        <div class="ci"><span class="ico">&#128205;</span><span></span></div>
+      </div>
+      <div class="reveal">
+        <div class="fcard">
+          <form id="qForm" novalidate autocomplete="on">
+            <input type="hidden" name="access_key" value="3f475c43-5373-4c9e-8852-2e48e2577eed"/>
+            <input type="hidden" name="subject" value="New Quote Request - PaintUPColors"/>
+            <input type="hidden" name="from_name" value="PaintUPColors Web"/>
+            <!-- Honeypot field: bots fill this, humans don't see it -->
+            <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off"/>
+            <div class="frow">
+              <div class="fg">
+                <label for="qFn">First Name *</label>
+                <input type="text" id="qFn" name="firstName" placeholder="John" autocomplete="given-name" maxlength="50"/>
+                <span class="emsg" id="qFnE">Please enter your first name.</span>
+              </div>
+              <div class="fg">
+                <label for="qLn">Last Name *</label>
+                <input type="text" id="qLn" name="lastName" placeholder="Smith" autocomplete="family-name" maxlength="50"/>
+                <span class="emsg" id="qLnE">Please enter your last name.</span>
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label for="qPh">Phone Number *</label>
+                <input type="tel" id="qPh" name="phone" placeholder="(555) 000-0000" autocomplete="tel" maxlength="20"/>
+                <span class="emsg" id="qPhE">Please enter a valid phone number.</span>
+              </div>
+              <div class="fg">
+                <label for="qEm">Email Address *</label>
+                <input type="email" id="qEm" name="email" placeholder="john@example.com" autocomplete="email" maxlength="100"/>
+                <span class="emsg" id="qEmE">Please enter a valid email address.</span>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="qSv">Service of Interest *</label>
+              <select id="qSv" name="service">
+                <option value="">-- Select a service --</option>
+                <option value="Interior/Exterior Painting">Interior / Exterior Painting</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Home Remodeling">Home Remodeling</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Roofing and Coverings">Roofing &amp; Coverings</option>
+                <option value="Doors and Windows">Doors &amp; Windows</option>
+                <option value="Multiple Services">Multiple Services</option>
+              </select>
+              <span class="emsg" id="qSvE">Please select a service.</span>
+            </div>
+            <div class="fg">
+              <label for="qDs">Project Description *</label>
+              <textarea id="qDs" name="description" placeholder="Briefly describe what you need. E.g.: Paint living room and dining room, walls in poor condition..." maxlength="1000"></textarea>
+              <span class="emsg" id="qDsE">Minimum 20 characters required.</span>
+            </div>
+            <div class="fchk">
+              <input type="checkbox" id="qPv"/>
+              <label for="qPv">I agree to the processing of my personal data and authorize being contacted for quoting purposes. *</label>
+            </div>
+            <span class="emsg" id="qPvE" style="margin-bottom:.8rem;">You must agree to continue.</span>
+            <button type="submit" class="subbtn" id="qSub">Send Quote Request &#8594;</button>
+          </form>
+          <div class="fsuc" id="qSuc">
+            <div class="fsicon">&#9989;</div>
+            <h3>Request Sent!</h3>
+            <p>Thank you. We will contact you within 24 business hours to coordinate your quote.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="flogo">Paint<span class="fac">UP</span>Colors</div>
+  <div class="flinks">
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#quote">Quote</a>
+  </div>
+  <hr class="fdiv"/>
+  <p class="fcp">&copy; 2026 PaintUPColors Services. All rights reserved.</p>
+</footer>
+
+<!-- SOCIAL FLOAT -->
+<div class="sfloat">
+  <a href="https://www.facebook.com/share/1Ah6spmbsA/" target="_blank" rel="noopener noreferrer" class="sfbtn sffb" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.884v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+    <span>Facebook</span>
+  </a>
+  <a href="https://www.instagram.com/prohomeservices" target="_blank" rel="noopener noreferrer" class="sfbtn sfig" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    <span>Instagram</span>
+  </a>
+  <a href="https://wa.me/013025690223" target="_blank" rel="noopener noreferrer" class="sfbtn sfwa" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+
+<!-- Toast notification element required by app.js -->
+<div id="toast"></div>
+
+<!-- Email obfuscation: assembled by JS so bots can't scrape it from the HTML -->
+<script>
+  (function(){
+    var el = document.getElementById('contactEmail');
+    if (!el) return;
+    var e = 'info' + '@' + 'paintupcolors' + '.' + 'com';
+    var a = document.createElement('a');
+    a.href = 'mailto:' + e;
+    a.textContent = e;
+    el.appendChild(a);
+  })();
+</script>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
